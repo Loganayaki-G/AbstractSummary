@@ -1,4 +1,3 @@
-#refference link : https://towardsdatascience.com/abstractive-summarization-using-pytorch-f5063e67510
 #pip install transformers
 from transformers import pipeline
 import os
@@ -23,4 +22,3 @@ countOfWords = len(text.split())
 
 summary_text = summarizer(text, max_length=countOfWords, min_length=5, do_sample=False)[0]['summary_text']
 print("\n\nYour BERT model similarity based summary is : \n",summary_text)
-print("finished")
